@@ -1,0 +1,12 @@
+[project]
+name = "tool-agent"
+version = "0.1.0"
+description = "Agente con herramientas y bucle agéntico propio"
+requires-python = ">=3.11"
+dependencies = ["openai", "ddgs", "python-dotenv"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
